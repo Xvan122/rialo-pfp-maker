@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rialo PFP Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Rialo PFP Generator</h1>
+        <h2>Create Your PFP Rialo with a sec</h2>
+      </header>
+
+      <main class="content">
+        <!-- KIRI: HASIL PFP -->
+        <section class="left">
+          <div class="pfp-box">
+            <span id="placeholder">( HASIL PFP MUNCUL DISINI )</span>
+            <img id="pfp-image" alt="Rialo PFP" />
+          </div>
+
+          <button id="download-btn" disabled>Download</button>
+        </section>
+
+        <!-- KANAN: INPUT + GENERATE -->
+        <section class="right">
+          <label for="name-input" class="label-title">Input Your Name</label>
+          <input
+            id="name-input"
+            type="text"
+            placeholder="contoh: ilham.eth"
+            autocomplete="off"
+          />
+
+          <button id="generate-btn">Generate</button>
+
+          <p id="status" class="status"></p>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
